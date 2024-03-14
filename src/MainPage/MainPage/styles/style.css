@@ -1,4 +1,4 @@
-.sec1 {
+.mainContent .sec1 {
   width: 900px;
   margin: 2rem auto;
   margin-bottom: 6rem;
@@ -6,22 +6,22 @@
   justify-content: space-between;
   align-items: center;
 }
-.sec1 main {
+.mainContent .sec1 main {
   width: 50%;
   margin: 4rem 0;
 }
-.sec1 main img {
+.mainContent .sec1 main img {
   width: 100%;
   height: auto;
 }
-.sec1 main p {
+.mainContent .sec1 main p {
   font-size: 1.2rem;
   margin: 2rem 0;
 }
-.sec1 aside {
+.mainContent .sec1 aside {
   width: 50%;
 }
-.sec1 aside .imgBox {
+.mainContent .sec1 aside .imgBox {
   width: 100%;
   margin-top: 4rem;
   display: flex;
@@ -29,13 +29,31 @@
   align-items: center;
   position: relative;
 }
-.sec1 aside .imgBox .castle {
+.mainContent .sec1 aside .imgBox .castle {
   width: 80%;
   height: auto;
   position: absolute;
   z-index: 5;
+  animation: castleMovement 5s linear infinite;
 }
-.sec1 aside .imgBox figure {
+@keyframes castleMovement {
+  0% {
+    transform: translate(0, 0px) rotate(-2deg) scale(1);
+  }
+  25% {
+    transform: translate(0, 10px) rotate(2deg) scale(0.95);
+  }
+  50% {
+    transform: translate(0, 0px) rotate(-2deg) scale(1);
+  }
+  75% {
+    transform: translate(0, -10px) rotate(2deg) scale(1.05);
+  }
+  100% {
+    transform: translate(0, 0px) rotate(-2deg) scale(1);
+  }
+}
+.mainContent .sec1 aside .imgBox figure {
   width: 70%;
   display: flex;
   justify-content: center;
@@ -44,29 +62,76 @@
   z-index: 4;
   transform: translate(70px, -70px);
 }
-.sec1 aside .imgBox figure img {
+.mainContent .sec1 aside .imgBox figure img {
   width: 100%;
   height: auto;
   position: absolute;
 }
-.sec1 aside .imgBox figure .ring:nth-child(1) {
+.mainContent .sec1 aside .imgBox figure .ring:nth-child(1) {
   width: 100%;
   height: auto;
+  animation: rotateRing1 10s linear infinite;
 }
-.sec1 aside .imgBox figure .ring:nth-child(2) {
+@keyframes rotateRing1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(359.9deg);
+  }
+}
+.mainContent .sec1 aside .imgBox figure .ring:nth-child(2) {
   width: 92%;
   height: auto;
+  animation: rotateRing2 15s linear infinite;
 }
-.sec1 aside .imgBox figure .ring:nth-child(3) {
+@keyframes rotateRing2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-359.9deg);
+  }
+}
+.mainContent .sec1 aside .imgBox figure .ring:nth-child(3) {
   width: 80%;
   height: auto;
+  animation: rotateRing3 8s linear infinite;
 }
-.sec1 aside .imgBox figure .ring:nth-child(4) {
+@keyframes rotateRing3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-359.9deg);
+  }
+}
+.mainContent .sec1 aside .imgBox figure .ring:nth-child(4) {
   width: 40%;
   height: auto;
+  animation: rotateRing1 20s linear infinite;
 }
-
-.sec2 {
+@keyframes rotateRing1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(359.9deg);
+  }
+}
+.mainContent .sec2 {
   width: 100%;
   height: 500px;
   background-color: #1A1A1A;
@@ -74,7 +139,11 @@
   margin: 0px auto;
   position: relative;
 }
-.sec2 figure {
+.mainContent .sec2 .lineTeste {
+  width: 50%;
+  height: 80px;
+}
+.mainContent .sec2 figure {
   width: 100%;
   display: flex;
   align-items: center;
@@ -82,14 +151,14 @@
   position: absolute;
   transform: translate(0, -32px);
 }
-.sec2 figure .line {
+.mainContent .sec2 figure .line {
   height: 80px;
 }
-.sec2 figure .line:last-child {
+.mainContent .sec2 figure .line:last-child {
   width: auto;
   height: 80px;
 }
-.sec2 figure:last-child {
+.mainContent .sec2 figure:last-child {
   width: 100%;
   display: flex;
   align-items: center;
@@ -98,16 +167,16 @@
   bottom: 0;
   transform: translate(0, 32px);
 }
-.sec2 figure:last-child .line {
+.mainContent .sec2 figure:last-child .line {
   height: 80px;
   transform: scaleY(-1);
 }
-.sec2 figure:last-child .line:last-child {
+.mainContent .sec2 figure:last-child .line:last-child {
   width: auto;
   height: 80px;
   transform: scaleY(-1);
 }
-.sec2 div {
+.mainContent .sec2 div {
   width: 900px;
   height: 100%;
   margin: 2rem auto;
@@ -115,7 +184,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.sec2 div main {
+.mainContent .sec2 div main {
   width: 50%;
   height: 100%;
   display: flex;
@@ -123,14 +192,14 @@
   justify-content: center;
   align-items: center;
 }
-.sec2 div main .houseBox {
+.mainContent .sec2 div main .houseBox {
   width: initial;
   height: initial;
   margin: 1rem;
   display: flex;
   gap: 1rem;
 }
-.sec2 div main .houseBox .button {
+.mainContent .sec2 div main .houseBox .button {
   background-color: var(--mainTextColor);
   width: 50px;
   height: 50px;
@@ -138,59 +207,147 @@
   border: none;
   cursor: pointer;
 }
-.sec2 div main .houseBox .button:nth-child(2) {
+.mainContent .sec2 div main .houseBox .button:nth-child(2) {
   transform: translate(0, -30px);
   margin-right: 2px;
 }
-.sec2 div main .houseBox .button:nth-child(3) {
+.mainContent .sec2 div main .houseBox .button:nth-child(3) {
   transform: translate(0, -30px);
   margin-left: 2px;
 }
-.sec2 div main img {
+.mainContent .sec2 div main img {
   width: 60px;
   height: auto;
   margin-bottom: 1rem;
 }
-.sec2 div main p {
+.mainContent .sec2 div main p {
   text-align: center;
   margin: 2rem 4rem;
   font-size: 1.2rem;
 }
-.sec2 div aside {
+.mainContent .sec2 div aside {
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.sec2 div aside .imgBox {
+.mainContent .sec2 div aside .imgBox {
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.sec2 div aside .imgBox .shield {
+.mainContent .sec2 div aside .imgBox img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.mainContent .sec2 div aside .imgBox .shield {
   width: 60%;
   height: auto;
   position: absolute;
   transform: rotate(-22.5deg);
   z-index: 5;
+  animation: houseMovement 6s linear infinite;
 }
-.sec2 div aside .imgBox img {
+@keyframes houseMovement {
+  0% {
+    transform: rotate(-20.5deg) scale(1);
+  }
+  25% {
+    transform: rotate(-22.5deg) scale(0.95);
+  }
+  50% {
+    transform: rotate(-24.5deg) scale(1);
+  }
+  75% {
+    transform: rotate(-22.5deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(-20.5deg) scale(1);
+  }
+}
+.mainContent .sec2 div aside .imgBox #houseRing1 {
   width: 100%;
   height: auto;
-  position: absolute;
+  animation: rotateHouseRing1 20s linear infinite;
 }
-.sec2 div aside .imgBox .ring:nth-child(1) {
-  width: 100%;
-  height: auto;
+@keyframes rotateHouseRing1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(359.9deg);
+  }
 }
-.sec2 div aside .imgBox .ring:nth-child(2) {
+.mainContent .sec2 div aside .imgBox #houseRing2 {
   width: 92%;
   height: auto;
+  animation: rotateHouseRing2 8s linear infinite;
 }
-.sec2 div aside .imgBox .ring:nth-child(3) {
+@keyframes rotateHouseRing2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-359.9deg);
+  }
+}
+.mainContent .sec2 div aside .imgBox #houseRing3 {
   width: 86%;
   height: auto;
+  animation: rotateHouseRing3 8s linear infinite;
+}
+@keyframes rotateHouseRing3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(359.9deg);
+  }
+}
+.mainContent .sec3 {
+  width: 900px;
+  margin: 4rem auto;
+  margin-bottom: 8rem;
+}
+.mainContent .sec3 h1 {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.mainContent .sec3 main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 160px;
+  margin-top: auto;
+  background-color: #1A1A1A;
+  background: linear-gradient(90deg, #383838, #1A1A1A);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  width: 30px;
+  height: auto;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */

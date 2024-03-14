@@ -1,0 +1,29 @@
+.mainPageCard {
+    background-color: #ffffff1A;
+    box-sizing: border-box;
+    width: 230px;
+    height: 260px;
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 80px;
+        height: auto;
+    }
+
+    h3 {
+        margin-top: 0.8rem;
+        font-size: 1.4rem;
+    }
+
+    p {
+        margin-top: 0.8rem;
+        text-align: center;
+        font-size: 0.6rem;
+        color: #ffffff;
+    }
+}
