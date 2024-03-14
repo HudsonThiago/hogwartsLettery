@@ -1,17 +1,18 @@
-import './App.css';
-import Header from './components/Header';
+import '../../App.css';
+import './styles/style.css';
+import Header from '../../components/Header';
 
 //imgs
-import HogwartsLetteryImg from "./img/hogwartsLettery.svg";
-import HogwartsCastleImg from "./img/hogwartsCastle.png";
-import Ring1 from "./img/Rings/ring1.svg";
-import Ring2 from "./img/Rings/ring2.svg";
-import Ring3 from "./img/Rings/ring3.svg";
-import Ring4 from "./img/Rings/ring4.svg";
-import Line from "./img/Div/line.svg";
-import TopLine from "./img/Div/topLine.svg";
-import HufflepuffIcon from "./img/Houses/hufflepuffIcon.png";
-import HufflepuffShield from "./img/Houses/hufflepuffShield.png";
+import HogwartsLetteryImg from "../../img/hogwartsLettery.svg";
+import HogwartsCastleImg from "../../img/hogwartsCastle.png";
+import Ring1 from "../../img/Rings/ring1.svg";
+import Ring2 from "../../img/Rings/ring2.svg";
+import Ring3 from "../../img/Rings/ring3.svg";
+import Ring4 from "../../img/Rings/ring4.svg";
+import Line from "../../img/Div/line.svg";
+import TopLine from "../../img/Div/topLine.svg";
+import HufflepuffIcon from "../../img/Houses/hufflepuffIcon.png";
+import HufflepuffShield from "../../img/Houses/hufflepuffShield.png";
 
 
 export default function App() {

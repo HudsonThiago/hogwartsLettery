@@ -1,0 +1,32 @@
+.mainHeader {
+  width: 100%;
+  height: 100px;
+}
+.mainHeader nav {
+  width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainHeader nav div {
+  display: flex;
+  align-items: center;
+}
+.mainHeader nav div ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+.mainHeader nav div ul a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--mainTextColor);
+}
+.mainHeader nav div img {
+  width: auto;
+  height: 50px;
+  margin-right: 4rem;
+}/*# sourceMappingURL=style.css.map */

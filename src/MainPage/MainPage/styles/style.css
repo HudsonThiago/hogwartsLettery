@@ -1,0 +1,196 @@
+.sec1 {
+  width: 900px;
+  margin: 2rem auto;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec1 main {
+  width: 50%;
+  margin: 4rem 0;
+}
+.sec1 main img {
+  width: 100%;
+  height: auto;
+}
+.sec1 main p {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+.sec1 aside {
+  width: 50%;
+}
+.sec1 aside .imgBox {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sec1 aside .imgBox .castle {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  z-index: 5;
+}
+.sec1 aside .imgBox figure {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+  transform: translate(70px, -70px);
+}
+.sec1 aside .imgBox figure img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.sec1 aside .imgBox figure .ring:nth-child(1) {
+  width: 100%;
+  height: auto;
+}
+.sec1 aside .imgBox figure .ring:nth-child(2) {
+  width: 92%;
+  height: auto;
+}
+.sec1 aside .imgBox figure .ring:nth-child(3) {
+  width: 80%;
+  height: auto;
+}
+.sec1 aside .imgBox figure .ring:nth-child(4) {
+  width: 40%;
+  height: auto;
+}
+
+.sec2 {
+  width: 100%;
+  height: 500px;
+  background-color: #1A1A1A;
+  background: linear-gradient(90deg, #1A1A1A, #383838);
+  margin: 0px auto;
+  position: relative;
+}
+.sec2 figure {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  transform: translate(0, -32px);
+}
+.sec2 figure .line {
+  height: 80px;
+}
+.sec2 figure .line:last-child {
+  width: auto;
+  height: 80px;
+}
+.sec2 figure:last-child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 32px);
+}
+.sec2 figure:last-child .line {
+  height: 80px;
+  transform: scaleY(-1);
+}
+.sec2 figure:last-child .line:last-child {
+  width: auto;
+  height: 80px;
+  transform: scaleY(-1);
+}
+.sec2 div {
+  width: 900px;
+  height: 100%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec2 div main {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec2 div main .houseBox {
+  width: initial;
+  height: initial;
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.sec2 div main .houseBox .button {
+  background-color: var(--mainTextColor);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.sec2 div main .houseBox .button:nth-child(2) {
+  transform: translate(0, -30px);
+  margin-right: 2px;
+}
+.sec2 div main .houseBox .button:nth-child(3) {
+  transform: translate(0, -30px);
+  margin-left: 2px;
+}
+.sec2 div main img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.sec2 div main p {
+  text-align: center;
+  margin: 2rem 4rem;
+  font-size: 1.2rem;
+}
+.sec2 div aside {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec2 div aside .imgBox {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sec2 div aside .imgBox .shield {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  transform: rotate(-22.5deg);
+  z-index: 5;
+}
+.sec2 div aside .imgBox img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.sec2 div aside .imgBox .ring:nth-child(1) {
+  width: 100%;
+  height: auto;
+}
+.sec2 div aside .imgBox .ring:nth-child(2) {
+  width: 92%;
+  height: auto;
+}
+.sec2 div aside .imgBox .ring:nth-child(3) {
+  width: 86%;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */
