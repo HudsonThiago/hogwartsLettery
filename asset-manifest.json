@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/hogwartsLettery/static/css/main.3dae5430.css",
-    "main.js": "/hogwartsLettery/static/js/main.9acf5c0b.js",
+    "main.css": "/hogwartsLettery/static/css/main.03bf562f.css",
+    "main.js": "/hogwartsLettery/static/js/main.62cfc13c.js",
     "static/js/453.3576338e.chunk.js": "/hogwartsLettery/static/js/453.3576338e.chunk.js",
     "static/media/background.png": "/hogwartsLettery/static/media/background.125113de67438a150dc5.png",
     "static/media/hogwartsCastle.png": "/hogwartsLettery/static/media/hogwartsCastle.669d4b97971a9db1f48e.png",
+    "static/media/hufflepuffShield.png": "/hogwartsLettery/static/media/hufflepuffShield.8014a595cf88e8c85152.png",
     "static/media/hogwartsLettery.svg": "/hogwartsLettery/static/media/hogwartsLettery.2c21341b0806c19e20b8045e82a13d1a.svg",
     "static/media/hogwartsIcon.svg": "/hogwartsLettery/static/media/hogwartsIcon.830241c0a2bf41e11d1ad1b686e64c30.svg",
     "index.html": "/hogwartsLettery/index.html",
@@ -12,12 +13,12 @@
     "static/media/ring3.svg": "/hogwartsLettery/static/media/ring3.6dc6b9fa45638567d91aff02cb4760a2.svg",
     "static/media/ring2.svg": "/hogwartsLettery/static/media/ring2.b606cac4b9e36a03f8e2cae390714976.svg",
     "static/media/ring4.svg": "/hogwartsLettery/static/media/ring4.6d04176dae23a513ab674ec457b16541.svg",
-    "main.3dae5430.css.map": "/hogwartsLettery/static/css/main.3dae5430.css.map",
-    "main.9acf5c0b.js.map": "/hogwartsLettery/static/js/main.9acf5c0b.js.map",
+    "main.03bf562f.css.map": "/hogwartsLettery/static/css/main.03bf562f.css.map",
+    "main.62cfc13c.js.map": "/hogwartsLettery/static/js/main.62cfc13c.js.map",
     "453.3576338e.chunk.js.map": "/hogwartsLettery/static/js/453.3576338e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dae5430.css",
-    "static/js/main.9acf5c0b.js"
+    "static/css/main.03bf562f.css",
+    "static/js/main.62cfc13c.js"
   ]
 }
