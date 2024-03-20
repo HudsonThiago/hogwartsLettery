@@ -3,9 +3,9 @@
   height: 100px;
 }
 .mainHeader nav {
-  width: 900px;
+  width: var(--screenSize);
   height: 100%;
-  margin: 0 auto;
+  margin: 0 15%;
   display: flex;
   align-items: center;
 }
