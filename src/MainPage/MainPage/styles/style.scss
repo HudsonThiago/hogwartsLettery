@@ -340,3 +340,572 @@ footer {
         margin-bottom: 1rem;
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .mainContent {
+        .sec1 {
+            width: calc(100% - 6rem);
+            margin: 2rem 3rem;
+            margin-bottom: 6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            main {
+                width: 50%;
+                margin: 4rem 0;
+    
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+    
+                p {
+                    font-size: 0.8rem;
+                    margin: 2rem 0;
+                }
+            }
+    
+            aside {
+                width: 50%;
+    
+                .imgBox {
+                    width: 100%;
+                    margin-top: 4rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+    
+                    .castle {
+                        width: 80%;
+                        height: auto;
+                        position: absolute;
+                        z-index: 5;
+                        animation: castleMovement 5s linear infinite;
+                    }
+    
+                    @keyframes castleMovement {
+                      0%   {transform: translate(0,0px) rotate(-2deg) scale(1);}
+                      25%   {transform: translate(0,10px) rotate(2deg) scale(0.95);}
+                      50%   {transform: translate(0,0px) rotate(-2deg) scale(1);}
+                      75%  {transform: translate(0,-10px) rotate(2deg) scale(1.05);}
+                      100% {transform: translate(0,0px) rotate(-2deg) scale(1);}
+                    }
+    
+                    figure {
+                        width: 70%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        left: -10%;
+                        z-index: 4;
+                        transform: translate(70px, -70px);
+    
+                        img {
+                            width: 100%;
+                            height: auto;
+                            position: absolute;
+                        }
+    
+                        .ring:nth-child(1){
+                            width: 100%;
+                            height: auto;
+                            animation: rotateRing1 10s linear infinite;
+                        }
+    
+                        @keyframes rotateRing1 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(180deg);}
+                          100% {transform: rotate(359.9deg);}
+                        }
+    
+                        .ring:nth-child(2){
+                            width: 92%;
+                            height: auto;
+                            animation: rotateRing2 15s linear infinite;
+                        }
+    
+                        @keyframes rotateRing2 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(-180deg);}
+                          100% {transform: rotate(-359.9deg);}
+                        }
+    
+                        .ring:nth-child(3){
+                            width: 80%;
+                            height: auto;
+                            animation: rotateRing3 8s linear infinite;
+                        }
+    
+                        @keyframes rotateRing3 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(-180deg);}
+                          100% {transform: rotate(-359.9deg);}
+                        }
+    
+                        .ring:nth-child(4){
+                            width: 40%;
+                            height: auto;
+                            animation: rotateRing1 20s linear infinite;
+                        }
+    
+                        @keyframes rotateRing1 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(180deg);}
+                          100% {transform: rotate(359.9deg);}
+                        }
+                    }
+                }
+            }
+        }
+
+.sec2 {
+        width: 100%;
+        height: 500px;
+        background-color: #1A1A1A;
+        background: linear-gradient(90deg, #1A1A1A, #383838);
+        margin: 0px auto;
+        position: relative;
+
+        .lineTeste {
+            width: 50%;
+            height: 80px;
+        }
+
+        figure {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: absolute;
+            transform: translate(0,-32px);
+
+            .line {
+                height: 80px;
+            }
+
+            .line:last-child {
+                width: auto;
+                height: 80px;
+            }
+        }
+
+        figure:last-child {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: absolute;
+            bottom: 0;
+            transform: translate(0,32px);
+
+            .line {
+                height: 80px;
+                transform: scaleY(-1);
+            }
+
+            .line:last-child {
+                width: auto;
+                height: 80px;
+                transform: scaleY(-1);
+            }
+        }
+
+        div {
+            width: 100%;
+            height: 100%;
+            margin: 2rem auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            main {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                .houseBox {
+                    width: initial;
+                    height: initial;
+                    margin: 0.6rem;
+                    display: flex;
+                    gap: 0.6rem;
+
+                    .button {
+                        background-color: var(--mainTextColor);
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: none;
+                        cursor: pointer;
+                    }
+
+                    .button:nth-child(2) {
+                        transform: translate(0,-30px);
+                        margin-right: 2px;
+                    }
+
+                    .button:nth-child(3) {
+                        transform: translate(0,-30px);
+                        margin-left: 2px;
+                    }
+                }
+
+                img {
+                    width: 40px;
+                    height: auto;
+                    margin-bottom: 1rem;
+                }
+                
+                p {
+                    text-align: center;
+                    margin: 1rem 2rem;
+                    font-size: 0.8rem;
+                }
+            }
+        
+            aside {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                .imgBox {
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+        
+                    img {
+                        width: 100%;
+                        height: auto;
+                        position: absolute;
+                    }
+
+                    .shield {
+                        width: 60%;
+                        height: auto;
+                        position: absolute;
+                        transform: rotate(-22.5deg);
+                        z-index: 5;
+                        animation: houseMovement 6s linear infinite;
+                    }
+
+                    @keyframes houseMovement {
+                      0%   {transform: rotate(-20.5deg) scale(1);}
+                      25%  {transform: rotate(-22.5deg) scale(0.95);}
+                      50%  {transform: rotate(-24.5deg) scale(1);}
+                      75%  {transform: rotate(-22.5deg) scale(1.05);}
+                      100% {transform: rotate(-20.5deg) scale(1);}
+                    }
+
+                    #houseRing1 {
+                        width: 100%;
+                        height: auto;
+                        animation: rotateHouseRing1 20s linear infinite;
+                    }
+
+                    @keyframes rotateHouseRing1 {
+                      0%   {transform: rotate(0deg);}
+                      50%  {transform: rotate(180deg);}
+                      100% {transform: rotate(359.9deg);}
+                    }
+
+                    #houseRing2 {
+                        width: 92%;
+                        height: auto;
+                        animation: rotateHouseRing2 8s linear infinite;
+                    }
+
+                    @keyframes rotateHouseRing2 {
+                      0%   {transform: rotate(0deg);}
+                      50%  {transform: rotate(-180deg);}
+                      100% {transform: rotate(-359.9deg);}
+                    }
+
+                    #houseRing3 {
+                        width: 86%;
+                        height: auto;
+                        animation: rotateHouseRing3 8s linear infinite;
+                    }
+
+                    @keyframes rotateHouseRing3 {
+                      0%   {transform: rotate(0deg);}
+                      50%  {transform: rotate(180deg);}
+                      100% {transform: rotate(359.9deg);}
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mainContent {
+        .sec1 {
+            width: calc(100% - 2rem);
+            height: calc(100vh - 80px);
+            margin: 1rem 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+    
+            main {
+                width: 100%;
+                height: 40%;
+                margin: 2rem 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                img {
+                    width: 50%;
+                    height: auto;
+                }
+    
+                p {
+                    font-size: 1rem;
+                    margin: 2rem 2rem;
+                    text-align: center;
+                }
+            }
+    
+            aside {
+                width: 100%;
+                height: 60%;
+    
+                .imgBox {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    top: 100px;
+    
+                    .castle {
+                        width: 50%;
+                        height: auto;
+                        position: absolute;
+                        z-index: 5;
+                        animation: castleMovement 5s linear infinite;
+                    }
+    
+                    @keyframes castleMovement {
+                      0%   {transform: translate(0,0px) rotate(-2deg) scale(1);}
+                      25%   {transform: translate(0,10px) rotate(2deg) scale(0.95);}
+                      50%   {transform: translate(0,0px) rotate(-2deg) scale(1);}
+                      75%  {transform: translate(0,-10px) rotate(2deg) scale(1.05);}
+                      100% {transform: translate(0,0px) rotate(-2deg) scale(1);}
+                    }
+    
+                    figure {
+                        width: 40%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        left: -30px;
+                        top: 20px;
+                        z-index: 4;
+                        transform: translate(70px, -70px);
+    
+                        img {
+                            width: 100%;
+                            height: auto;
+                            position: absolute;
+                        }
+    
+                        .ring:nth-child(1){
+                            width: 100%;
+                            height: auto;
+                            animation: rotateRing1 10s linear infinite;
+                        }
+    
+                        @keyframes rotateRing1 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(180deg);}
+                          100% {transform: rotate(359.9deg);}
+                        }
+    
+                        .ring:nth-child(2){
+                            width: 92%;
+                            height: auto;
+                            animation: rotateRing2 15s linear infinite;
+                        }
+    
+                        @keyframes rotateRing2 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(-180deg);}
+                          100% {transform: rotate(-359.9deg);}
+                        }
+    
+                        .ring:nth-child(3){
+                            width: 80%;
+                            height: auto;
+                            animation: rotateRing3 8s linear infinite;
+                        }
+    
+                        @keyframes rotateRing3 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(-180deg);}
+                          100% {transform: rotate(-359.9deg);}
+                        }
+    
+                        .ring:nth-child(4){
+                            width: 40%;
+                            height: auto;
+                            animation: rotateRing1 20s linear infinite;
+                        }
+    
+                        @keyframes rotateRing1 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(180deg);}
+                          100% {transform: rotate(359.9deg);}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .mainContent {
+        .sec1 {
+            width: calc(100% - 2rem);
+            height: calc(100vh - 80px);
+            margin: 1rem 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+    
+            main {
+                width: 100%;
+                height: 40%;
+                margin: 2rem 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                img {
+                    width: 50%;
+                    height: auto;
+                }
+    
+                p {
+                    font-size: 1rem;
+                    margin: 2rem 2rem;
+                    text-align: center;
+                }
+            }
+    
+            aside {
+                width: 100%;
+                height: 60%;
+    
+                .imgBox {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    top: 100px;
+    
+                    .castle {
+                        width: 50%;
+                        height: auto;
+                        position: absolute;
+                        z-index: 5;
+                        animation: castleMovement 5s linear infinite;
+                    }
+    
+                    @keyframes castleMovement {
+                      0%   {transform: translate(0,0px) rotate(-2deg) scale(1);}
+                      25%   {transform: translate(0,10px) rotate(2deg) scale(0.95);}
+                      50%   {transform: translate(0,0px) rotate(-2deg) scale(1);}
+                      75%  {transform: translate(0,-10px) rotate(2deg) scale(1.05);}
+                      100% {transform: translate(0,0px) rotate(-2deg) scale(1);}
+                    }
+    
+                    figure {
+                        width: 40%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        left: -30px;
+                        top: 20px;
+                        z-index: 4;
+                        transform: translate(70px, -70px);
+    
+                        img {
+                            width: 100%;
+                            height: auto;
+                            position: absolute;
+                        }
+    
+                        .ring:nth-child(1){
+                            width: 100%;
+                            height: auto;
+                            animation: rotateRing1 10s linear infinite;
+                        }
+    
+                        @keyframes rotateRing1 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(180deg);}
+                          100% {transform: rotate(359.9deg);}
+                        }
+    
+                        .ring:nth-child(2){
+                            width: 92%;
+                            height: auto;
+                            animation: rotateRing2 15s linear infinite;
+                        }
+    
+                        @keyframes rotateRing2 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(-180deg);}
+                          100% {transform: rotate(-359.9deg);}
+                        }
+    
+                        .ring:nth-child(3){
+                            width: 80%;
+                            height: auto;
+                            animation: rotateRing3 8s linear infinite;
+                        }
+    
+                        @keyframes rotateRing3 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(-180deg);}
+                          100% {transform: rotate(-359.9deg);}
+                        }
+    
+                        .ring:nth-child(4){
+                            width: 40%;
+                            height: auto;
+                            animation: rotateRing1 20s linear infinite;
+                        }
+    
+                        @keyframes rotateRing1 {
+                          0%   {transform: rotate(0deg);}
+                          50%   {transform: rotate(180deg);}
+                          100% {transform: rotate(359.9deg);}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

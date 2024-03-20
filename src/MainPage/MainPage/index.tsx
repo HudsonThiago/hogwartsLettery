@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import Card from "../../components/MainPageCard";
 import HogwartsImg from "../../img/hogwartsIcon.svg";
 import { useEffect } from 'react';
+import Button from '../../components/Button';
 
 //imgs
 import HogwartsLetteryImg from "../../img/hogwartsLettery.svg";
@@ -20,10 +21,7 @@ import HufflepuffShield from "../../img/Houses/hufflepuffShield.png";
 
 export default function App() {
 
-  const lineWidth=(e:any)=>{
-    console.log(e);
-  }
-
+  
   // useEffect(()=>{
   //   const line = document.getElementById("#line1");
   //   console.log(line)
@@ -37,7 +35,7 @@ export default function App() {
           <main>
           <img src={HogwartsLetteryImg} alt="hogwarts lettery" draggable="false" />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <button>Solicitar matrícula</button>
+            <Button>Solicitar matrícula</Button>
           </main>
           <aside>
               <div className="imgBox">
@@ -52,19 +50,6 @@ export default function App() {
           </aside>
         </section>
         <section className="sec2">
-          <figure className='line1'>
-              <img className="line" src={Line} alt="Div" draggable="false" />
-              <img className="line" src={Line} alt="Div" draggable="false" />
-              <img className="line" src={Line} alt="Div" draggable="false" />
-              <img className="line" src={Line} alt="Div" draggable="false" />
-              <img className="line" src={Line} alt="Div" draggable="false" />
-              <img className="line" src={TopLine} alt="Div" draggable="false" />
-          </figure>
-          {/* <img onResize={(e)=>lineWidth(e.target)} onClick={(e)=>lineWidth(e.target)} className="lineTeste" src={Line} alt="Div" draggable="false" /> */}
-          {/* <svg onClick={(e)=>lineWidth(e)} xmlns="http://www.w3.org/2000/svg" width="960" height="80" viewBox="0 0 960 80" fill="none">
-            <path d="M0 24V32H960V24H0Z" fill="#C4C4C4"/>
-            <path d="M960 0V8H0V0H960Z" fill="#C4C4C4"/>
-          </svg> */}
           <div>
               <aside>
                   <div className="imgBox">
@@ -87,15 +72,8 @@ export default function App() {
                   <p>Ensinarei a todos e os tratarei como iguais</p>
               </main>
           </div>
-          <figure className='bottomLine'>
-              <img className="line" src={Line} alt="Div" draggable="false" />
-              <img className="line" src={Line} alt="Div" draggable="false" />
-              <img className="line" src={Line} alt="Div" draggable="false" />
-              <img className="line" src={Line} alt="Div" draggable="false" />
-              <img className="line" src={Line} alt="Div" draggable="false" />
-              <img className="line" src={TopLine} alt="Div" draggable="false" />
-          </figure>
         </section>
+        {/* 
         <section className='sec3'>
           <h1>PILARES</h1>
           <main>
@@ -103,7 +81,7 @@ export default function App() {
               <Card title="VISÃO" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
               <Card title="VALORES" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
           </main>
-        </section>
+        </section> */}
       </main>
       <footer>
         <img src={HogwartsImg} alt="ícone de hogwarts" draggable="false" />

@@ -1,0 +1,10 @@
+.mainButton {
+  background-color: var(--buttonPrimary);
+  background: linear-gradient(90deg, #EA3B76, #BD93E7);
+  padding: 0.4rem 2rem;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

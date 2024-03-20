@@ -8,10 +8,17 @@
         margin: 0 auto;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+
+        img {
+            width: auto;
+            height: 50px; 
+            margin-right: 4rem;
+        }
 
         div {
+            width: 100%;
             display: flex;
+            justify-content: space-between;
             align-items: center;
             
             ul {
@@ -26,12 +33,90 @@
                     color: var(--mainTextColor);
                 }
             }
+        }
+    }
+}
 
+@media only screen and (max-width: 1000px) {
+    .mainHeader {
+        width: 100%;
+        height: 100px;
+    
+        nav {
+            width: calc(100% - 6rem);
+            height: 100%;
+            margin: 0 3rem;
+            display: flex;
+            align-items: center;
+    
             img {
                 width: auto;
-                height: 50px; 
-                margin-right: 4rem;
+                height: 46px; 
+                margin-right: 3rem;
+            }
+    
+            div {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                ul {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    gap: 1rem;
+    
+                    a {
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: var(--mainTextColor);
+                    }
+                }
             }
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .mainHeader {
+        width: 100%;
+        height: 80px;
+    
+        nav {
+            width: calc(100% - 2rem);
+            height: 100%;
+            margin: 0 1rem;
+            display: flex;
+            align-items: center;
+    
+            img {
+                width: auto;
+                height: 40px; 
+                margin-right: 3rem;
+            }
+    
+            div {
+                width: 100%;
+                display: none;
+                justify-content: space-between;
+                align-items: center;
+                
+                ul {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    gap: 1rem;
+    
+                    a {
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: var(--mainTextColor);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
